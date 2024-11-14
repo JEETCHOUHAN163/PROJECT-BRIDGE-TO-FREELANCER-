@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #dfe3ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.signup-container h2 {
+    margin-bottom: 1rem;
+    font-size: 26px;
+    color: #4a4a4a;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.signup-container label {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon .icon {
+    position: absolute;
+    left: 12px;
+    font-size: 16px;
+    color: #b2b2b2;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background-color: #f9fafc;
+}
+
+.signup-container input:focus {
+    border-color: #4d88ff; /* Darker border color on focus */
+    outline: none;
+    background-color: #ffffff;
+}
+
+.signup-container button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #4d88ff; /* Darker blue color for button */
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.signup-container button:hover {
+    background-color: #3a6fdb; /* Even darker shade on hover */
+    transform: translateY(-2px);
+}
+
+.signup-container button:active {
+    transform: translateY(0px);
+}
+
+.signup-container .login-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #444444; /* Darker text color for login link */
+}
+
+.signup-container .login-link a {
+    color: #4d88ff; /* Darker blue color for the link */
+    text-decoration: none;
+}
+
+.signup-container .login-link a:hover {
+    color: #3a6fdb; /* Even darker shade on hover */
+    text-decoration: underline;
+}
